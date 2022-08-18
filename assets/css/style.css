@@ -84,8 +84,14 @@ a, li{
 }
 .header-hero{ 
     height:100vh;
+<<<<<<< Updated upstream
     background-image: url(./img/floralPaint.jpg),
     linear-gradient(0deg, rgba(35, 4, 39, 0.6), rgba(35, 4, 39, 0.6));
+=======
+    background-image: 
+         linear-gradient(0deg, rgba(35, 4, 39, 0.6), rgba(35, 4, 39, 0.6)),
+         url(/assets/img/floralPaint.jpg);
+>>>>>>> Stashed changes
     background-size: cover;
     background-repeat: no-repeat;
     
