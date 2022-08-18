@@ -85,10 +85,7 @@ a, li{
 .header-hero{ 
     height:100vh;
 
-    background-image: 
-    linear-gradient(0deg, rgba(35, 4, 39, 0.6), rgba(35, 4, 39, 0.6)),
-    url(./floralPaint.jpg);
-
+    background-image:url(./img/floralPaint.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
