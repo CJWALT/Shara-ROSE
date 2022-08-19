@@ -444,8 +444,8 @@ h2.review-header{
     margin:6.25rem 0;
     display:grid; 
     grid-template-columns: 50% 40%;
-    gap:10%;
-}
+    gap:7rem;
+  }
 
 .form-cart-wrap .create-form h3{ 
     font-size:1.63rem;
@@ -503,7 +503,7 @@ h2.review-header{
         text-transform: capitalize;
         font-size:1.125rem; 
         font-weight:400;
-        width:5rem;
+        width:11rem;
         padding:12px 0px;
         transition:all 400ms ease;
     }
@@ -847,10 +847,6 @@ small.footer-copy{
         display:none;
     }
 
-    #mission{ 
-        margin:5rem 0 5.6rem  0
-    }
-
     .mission-body{ 
         grid-template-columns: 58% 37%;
         gap:5%;
@@ -911,19 +907,51 @@ small.footer-copy{
    
 }
 
-@media screen and (max-width:600px){ 
-  
+@media screen and (max-width:968px){ 
+    .hero_body h1.hero_heading{ 
+        font-size:2rem;
+    }
+
+    .form-cart-wrap .create-form .send-message{
+        width:100%;
+    
+    }
+    
+    .form-cart-wrap .create-form .send-message form .form-field input,
+    .form-cart-wrap .create-form .send-message form  .form-field textarea{ 
+        width:100%;
+    }
+
+    .form-cart-wrap .cart .img-wrap-carousel{ 
+        margin-bottom:3rem;
+    }
+    .form-cart-wrap .create-form .send-message form .form-field textarea{ 
+        margin-bottom:3rem;
+    }
+    .donate-wrap .donate-btn .btn{ 
+        width:90%;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:767px){ 
+    .container{ 
+        width:80%;
+    }
     .header-wrap ul.nav{ 
         top:3.8rem;
     }
 
-    .header-hero{ 
-        height:45rem;
+    section.header-hero{ 
+        height:40rem;
     }
 
     .header-hero #home{
             top:7rem;
-        }
+    }
+    .hero_body h1.hero_heading{ 
+        font-size:2.3rem;
+    }
     .mission-body{ 
             grid-template-columns:1fr;
             gap:4rem;        
@@ -977,24 +1005,31 @@ small.footer-copy{
         grid-template-columns:1fr;
     }
 
-    .form-cart-wrap .cart{ 
-        padding-bottom: 2rem;
-    }
-    .form-cart-wrap .create-form .send-message{
-        width:100%;
-    
-    }
-    
-    .form-cart-wrap .create-form .send-message form .form-field input,
-    .form-cart-wrap .create-form .send-message form  .form-field textarea{ 
-        width:100%;
-    }
+     .major-awards h2.award-title{ 
+         padding-top:2.68rem;
+     }
     .award-image-wrap{
         grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+    .award-image-wrap > img{ 
+         
+        border-radius:.7rem; 
+        width:100%; 
+        height:auto
     }
 
+.award-image-wrap > img:nth-child(2):hover,
+.award-image-wrap > img:nth-child(3):hover{ 
+    transform:none;
+}
+
+.award-image-wrap > img:last-child:hover{ 
+    padding-right:0rem;
+    transform:none;
+}
+
     .donate{ 
-        padding-bottom:2rem;
         height:auto;
         background-position-y: 180px, 0px;
         background-position-x: 0px, 878px;
@@ -1002,8 +1037,7 @@ small.footer-copy{
         .donate-wrap{ 
         flex-direction: column;
         row-gap:2rem;
-        padding-left:0; 
-        padding-right:0; 
+        padding:3rem 0rem;
     }
     .donate-wrap .donate-para{ 
         width: 100%; 
@@ -1019,9 +1053,16 @@ small.footer-copy{
 }
 
 
-@media screen and (max-width:400px){ 
+@media screen and (max-width:576px){
+    .container{ 
+        width:100%;
+    } 
     section.header-hero{ 
         height:47rem;
+    }
+
+    .hero_body h1.hero_heading{ 
+        font-size:2.13rem;
     }
 
     .header-wrap ul.nav{ 
@@ -1053,7 +1094,7 @@ small.footer-copy{
     }
     .donate{ 
         background-position-y: 222px, 0px;
-        background-position-x: 0px, 198px;
+        background-position-x: 0px, -298px;
     }
     .donate-wrap .donate-btn{ 
         width:44%;
