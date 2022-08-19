@@ -84,21 +84,13 @@ a, li{
 }
 .header-hero{ 
     height:100vh;
-
-<<<<<<< Updated upstream
-    background-image:
-     linear-gradient(0deg, rgba(35, 4, 39, 0.6), rgba(35, 4, 39, 0.6)),
-     url('../img/floralPaint.jpg');
-=======
     background-image: 
     linear-gradient(0deg, rgba(35, 4, 39, 0.6), rgba(35, 4, 39, 0.6)),
     url('../img/floralPaint.jpg');
-
->>>>>>> Stashed changes
     background-size: cover;
     background-repeat: no-repeat;
-    
-    }
+}
+
 header{ 
     box-shadow:  0px 1px 5px #8A6A8F;
     width:100%;
@@ -496,7 +488,7 @@ h2.review-header{
     border:none;
     padding:1rem 1rem; 
     height:8.25rem;
-    margin-bottom: 4.2rem;
+    margin-bottom:6rem;
     font-size:1.13rem;
     font-weight:300;
     font-family: 'mada', sans-serif;    
@@ -511,7 +503,8 @@ h2.review-header{
         text-transform: capitalize;
         font-size:1.125rem; 
         font-weight:400;
-        width:6rem;
+        width:5rem;
+        padding:12px 0px;
         transition:all 400ms ease;
     }
 
@@ -535,35 +528,41 @@ h2.review-header{
     overflow:hidden;
     display:flex;
     justify-content:center;
-    padding-bottom:5.3rem;
-   
+    margin-bottom:5.3rem;
 }
 .test-div{ 
-    position:relative; 
+    position:relative;
+    width: 19rem;
 }
 
 .form-cart-wrap .cart .img-wrap-carousel .carousel-img, 
 .form-cart-wrap .cart .img-wrap-carousel .img--hidden{ 
     display:none;
-    transition:all 400ms ease;
 } 
 .form-cart-wrap .cart .img-wrap-carousel .carousel-img{ 
     align-self: center;
-   transition:all 400ms ease-in;
-     
+    
+    animation: fadeImg .3s;    
+}
+
+@keyframes fadeImg{ 
+    0%{ 
+        opacity:0; 
+    }
+    100%{ 
+        opacity:1; 
+        transform: opacity linear;
+    }
 }
 .form-cart-wrap .cart .img-wrap-carousel .carousel-img img{ 
-  /* width:100%;
-  max-width:700px; */
-    height:12rem;
-    object-fit:cover;
-    transition:all 400ms ease; 
-
+    height: 14rem;
+    width: 19rem;
+    object-fit: cover;
 }
 
 .form-cart-wrap .cart .img-wrap-carousel .img--visible{ 
 display:block;
-transition:all 300ms ease-in;
+
 }
 
 .img-wrap-carousel .carousel-btn{ 
@@ -574,14 +573,10 @@ transition:all 300ms ease-in;
     top:50%;
     left:50%; 
     transform: translate(-50%, -50%);
-    
-
-
 }
 .img-wrap-carousel .carousel-btn .btn i{ 
-  
-    color:var(--secondary-color); 
-    }
+      color:var(--secondary-color); 
+}
 .img-wrap-carousel .carousel-btn .btn{ 
     background: #fff;
     padding:0;
@@ -589,9 +584,16 @@ transition:all 300ms ease-in;
     justify-content: center;
     display:flex; 
     box-shadow:0px 2px 8px rgba(117, 66, 125, 0.3);;
-    font-size:1.8rem; 
+    font-size:2rem; 
     font-weight:700; 
     border-radius:50%; 
+    opacity:.4;
+    transition:all 400ms ease;
+}
+.img-wrap-carousel .carousel-btn .btn:hover{ 
+    opacity:1; 
+    box-shadow:none; 
+    background-color: transparent;
 }
 
 .form-cart-wrap .cart .right{ 
@@ -647,8 +649,8 @@ transition:all 300ms ease-in;
 .donate{ 
     position:relative;
     height:21.25rem; 
-    background-image:url(/assets/img/Ellipse\ 1.png), 
-                      url(/assets/img/Ellipse\ 2.png);
+    background-image:url('../img/Ellipse\ 1.png'), 
+                      url('../img/Ellipse\ 2.png');
     
     background-repeat: no-repeat;
     background-position-y: 146px, 0px;
@@ -680,7 +682,7 @@ transition:all 300ms ease-in;
 }
 .donate-wrap .donate-btn .btn{ 
     float:right;
-    width:63%;
+    
     transition:all 300ms ease;
     cursor: pointer;
 }
@@ -786,6 +788,9 @@ small.footer-copy{
 
 @media screen and (max-width:1024px){ 
   
+    section.header-hero{ 
+        height:38rem;
+    }
     .container{ 
         width:100%;
     }
@@ -797,7 +802,7 @@ small.footer-copy{
 
     .header-wrap ul.nav{ 
         position:absolute;
-        top:5.6rem;
+        top:5.7rem;
         text-align:left;
         padding:3rem 3rem;
         right:2rem;
@@ -874,8 +879,18 @@ small.footer-copy{
     .review-wrap article.card:last-child{ 
         height:23rem;
     }
+
     .form-cart-wrap .cart .img-wrap-carousel{
-        padding-bottom:7.7rem;
+        margin-bottom:7.2rem;
+    }
+    .form-cart-wrap .create-form .send-message{
+        width:31.81rem;
+    }
+    .form-cart-wrap .create-form .send-message form .form-field input{ 
+        width:31.81rem;
+    }
+    .form-cart-wrap .create-form .send-message form .form-field textarea{ 
+        width:31.81rem;
     }
     .donate{ 
      
@@ -888,7 +903,7 @@ small.footer-copy{
     .footer-wrap{ 
     grid-template-columns:1fr 1fr;
     row-gap: 2rem;
-}
+    }
     .footer-wrap .footer-img{ 
         grid-column:1/4;
         width:10%;
@@ -965,14 +980,13 @@ small.footer-copy{
     .form-cart-wrap .cart{ 
         padding-bottom: 2rem;
     }
-    .form-cart-wrap .send-message{
+    .form-cart-wrap .create-form .send-message{
         width:100%;
     
     }
-
     
-    .form-cart-wrap .send-message .form-field input,
-    .form-cart-wrap .send-message .form-field textarea{ 
+    .form-cart-wrap .create-form .send-message form .form-field input,
+    .form-cart-wrap .create-form .send-message form  .form-field textarea{ 
         width:100%;
     }
     .award-image-wrap{
