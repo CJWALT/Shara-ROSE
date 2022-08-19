@@ -984,10 +984,13 @@ small.footer-copy{
 
     .wrap-us .aboutus-img img.founder{ 
         border-radius: 50%;
-        height:22rem;
-        max-width:60%;
+        height:17rem;
+        max-width:42%;
         align-self: center;
     
+    }
+    .wrap-us .aboutus-img .icons{ 
+        gap:2.5rem;
     }
     
     .wrap-us .aboutus-content hr.about-bar{ 
@@ -1049,6 +1052,9 @@ small.footer-copy{
     }
     .donate-wrap .donate-btn .btn{ 
         float:none;
+    }
+    .footer-wrap .contact-us .contact-us-links{
+        gap:1.3rem;
     }
 }
 
