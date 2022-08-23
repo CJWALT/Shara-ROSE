@@ -1070,6 +1070,26 @@ header .header-logo{
   .wrap-us .aboutus-img .icons {
     gap: 2.5rem;
   }
+    .wrap-us .aboutus-img img.founder{ 
+        border-radius: 50%;
+        height:20rem;
+        max-width:60%;
+        align-self: center;
+    
+    }
+    .wrap-us .aboutus-img .icons{ 
+        row-gap:4rem;
+    }
+    
+    .wrap-us .aboutus-content hr.about-bar{ 
+        width:6.4rem
+    }
+    .review-wrap{ 
+        grid-template-columns: 1fr;
+    }
+    .review-wrap article.card:last-child{ 
+        height:22rem;
+    }
 
   .wrap-us .aboutus-content hr.about-bar {
     width: 6.4rem;
