@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input_amount</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="/index.html">
+            <img src="/img/logo.png" alt="logo image"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-center-div">
+                <p class="form-heading">
+                    let's help others with your charity.
+                <p>
+            <form
+            name="PayFastPayNowForm"
+            action="https://www.payfast.co.za/eng/process"
+            method="post"
+            >
+            <input required type="hidden" name="cmd" value="_paynow" />
+            <input
+                required
+                type="hidden"
+                name="receiver"
+                pattern="[0-9]"
+                value="20445240"
+            />
+            <div class="payment-form">
+                <div class="input_donatebtn">
+                                   
+                    <input
+                    required
+                    class="amountInput"
+                    id="PayFastAmount"
+                    type="number"
+                    step=".01"
+                    name="amount"
+                    min="5.00"
+                    placeholder="100.00"
+                    
+                    />
+                
+                    <input
+                            required
+                            type="hidden"
+                            name="item_name"
+                            maxlength="255"
+                            value="Donate"
+                        />
+                        <input
+                            type="submit"
+                            class="btn"
+                            value="Donate"
+                        />    
+                          
+                         
+                  </div>
+                </form>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

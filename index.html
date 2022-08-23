@@ -15,29 +15,8 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 <body>
-    <!-- <form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
-        <input required type="hidden" name="cmd" value="_paynow">
-        <input required type="hidden" name="receiver" pattern="[0-9]" value="20445240">
-        <table>
-        <tr>
-        <td><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
-        <td><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="100.00"></td>
-        </tr>
-        </table>
-        
-        <input required type="hidden" name="item_name" maxlength="255" value="Donate">
-        <table>
-        <tr>
-        <td colspan=2 align=center>
-        <input type="image" src="https://www.payfast.co.za/images/buttons/PayNow/Dark-Large-Round-PayNow.png" alt="Pay Now" title="Pay Now with PayFast">
-        </td>
-        </tr>
-        </table>
-        </form> -->
-    
     <section class="header-hero">
         <header class="move-scroll">
             <div class="container">
@@ -53,10 +32,8 @@
                         <li class="nav_link"><a href="#review">Review</a></li>
                     </ul>
                     <div class="header_btn">
-                        <!-- <form  name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
-                            <input type="submit" class="border-btn" value=" Donate Now">
-                        </form> -->
-                        <a href="#" class="border-btn">Donate Now</a>
+                        
+                        <a href="/initialize_payment.html" class="border-btn">Donate Now</a>
                         
                     </div>
                   
@@ -77,7 +54,7 @@
                         the resources to access professional <br>therapy find comfort and healing through art.
                     </p>
                     <div class="home_btn">
-                        <a href="#" class="btn">Donate Now</a>
+                        <a href="/initialize_payment.html" class="btn">Donate Now</a>
                     </div>
                 </div>
             </div> 
@@ -122,34 +99,34 @@
                 <h2 class="gallery-heading">
                 Gallery
             </h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="window-paint swiper-slide">
+            <div class="gallery-img-wrap">
+                <div class="gallery-wrapper">
+                    <div class="window-paint">
                         <img src="./img/windowPaint.jpg" alt="window paint">
                     </div>
-                    <div class="garden-paint swiper-slide">
+                    <div class="garden-paint">
                         <img src="./img/gardenPaint.jpg" alt="garden paint">
                     </div>
-                     <div class="turtle-paint swiper-slide">
+                     <div class="turtle-paint">
                         <img src="./img/oceanPaint.jpg" alt="turtle paint">
                     </div>
-                    <div class="wave-paint swiper-slide">
+                    <div class="wave-paint">
                         <img src="./img/wavePaint.jpg"   alt="wave paint">
                     </div>
-                    <div class="boat-paint swiper-slide">
+                    <div class="boat-paint">
                     <img src="./img/boatPaint.jpg"  
                     alt="boat paint">
                     </div>
-                    <div class="shark-paint swiper-slide">
+                    <div class="shark-paint">
                         <img src="./img/sharkPaint.jpg" alt="shark paint">
                     </div>
-                     <div class="flower swiper-slide">
+                     <div class="flower">
                         <img src="./img/flower.jpg" alt="flower paint">
                     </div>
-                     <div class="hill-paint swiper-slide">
+                     <div class="hill-paint">
                         <img src="./img/hillPaint.jpg" alt="hill paint">
                     </div>
-                     <div class="ocean-paint swiper-slide">
+                     <div class="ocean-paint">
                         <img src="./img/tortoisePaint.jpg" alt="ocean paint"> 
                     </div>
                    
@@ -257,7 +234,7 @@
             <div class="create-form">
                 <h3>Lets create something Great Together!</h3>
                 <p class="form-donate">
-                    Book a self care throuhg art session or donate resources
+                    Book a self care through art session or donate resources
                 </p>
                 <div class="send-message">
                     <form taget="_blank" action="https://formsubmit.co/a5b407c521dfdcfa1ad365dea3601cca" method="POST" >
@@ -329,8 +306,9 @@
                 Let's help others with your charity
             </p>    
             <div class="donate-btn">
-                <div class="btn">
+                <a href="/initialize_payment.html" class="btn">
                     Donate Now
+                    </a>
                 </div>
             </div>
         </div>
@@ -356,7 +334,7 @@
                         <a href="#mission">Our mission</a>
                     </li>
                     <li class="footer-links">
-                        <a href="#aboutus">About us</a>
+                        <a href="#aboutUs">About us</a>
                     </li>
                     <li class="footer-links">
                         <a href="#gallery">Gallery</a>
