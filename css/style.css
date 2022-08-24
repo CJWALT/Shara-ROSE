@@ -752,14 +752,6 @@ small.footer-copy {
 
 
 /* initializePament */
-header{ 
-    background: var(--bg-gradient);
-}
-header .header-logo{ 
-    
-    width:9%;
-    
-} 
 
 .form-wrap{ 
     position: relative;
