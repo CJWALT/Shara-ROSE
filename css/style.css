@@ -1221,8 +1221,12 @@ small.footer-copy {
     width: 20%;
   }
 }
-
-@media screen and (max-width: 360px) {
+/* 
+@media screen and (max-width: 414px) {
+  /* .mission-body .testimonial hr.testimonial-bar {
+    width: 3rem; 
+} */
+@media screen and (max-width: 414px) {
   section.header-hero{ 
     height: 50rem;
   }
@@ -1278,5 +1282,9 @@ small.footer-copy {
   
 .form-team-wrap .team__wrap > div .team__position--wrap h4{ 
     font-size:2.3rem;
+  }
+
+  .donate{ 
+    background-position-y:151px, 0px;
   }
 }
