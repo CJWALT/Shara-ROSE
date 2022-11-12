@@ -710,10 +710,11 @@ small.footer-copy {
 
 header.position--header{ 
   position:relative;
+  background:var(--bg-gradient)
 }
 .form-wrap {
   position: relative;
-  top: 6rem;
+  
   width: 70%;
   margin: 0 auto;
   height: 70vh;
