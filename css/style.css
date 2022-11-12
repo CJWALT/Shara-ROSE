@@ -708,6 +708,9 @@ small.footer-copy {
 
 /* initializePayment */
 
+header.position--header{ 
+  position:relative;
+}
 .form-wrap {
   position: relative;
   top: 6rem;
@@ -723,14 +726,13 @@ small.footer-copy {
   color: var(--primary-color);
   font-size: 1.5rem;
 }
-.form-wrap .form-center-div {
-  background: var(--secondary-color);
-}
+
 .form-wrap .form-center-div {
   align-self: center;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   padding: 2rem;
+   background: var(--secondary-color);
 }
 .form-wrap .form-center-div form .payment-form {
   align-content: center;
@@ -1221,11 +1223,6 @@ small.footer-copy {
     width: 20%;
   }
 }
-/* 
-@media screen and (max-width: 414px) {
-  /* .mission-body .testimonial hr.testimonial-bar {
-    width: 3rem; 
-} */
 @media screen and (max-width: 414px) {
   section.header-hero{ 
     height: 50rem;
@@ -1286,5 +1283,13 @@ small.footer-copy {
 
   .donate{ 
     background-position-y:151px, 0px;
+  }
+
+
+
+  /* initializepayment */
+  .form-wrap{ 
+    top:0; 
+    width:95%;
   }
 }
