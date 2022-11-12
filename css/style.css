@@ -735,11 +735,8 @@ header.position--header{
    background: var(--secondary-color);
 }
 .form-wrap .form-center-div form .payment-form {
-  align-content: center;
   margin: 0 auto;
   padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
 }
 .form-wrap .form-center-div form .payment-form .amount-input {
   align-self: center;
@@ -752,6 +749,9 @@ header.position--header{
 }
 .form-wrap .form-center-div form .payment-form .input_donatebtn {
   align-self: center;
+  display:grid; 
+  grid-template-columns: auto auto;
+  gap:16px; 
 }
 .form-wrap .form-center-div form .amountInput {
   padding: 0 0.3rem;
